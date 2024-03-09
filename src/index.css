@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+@tailwind base;
+
+
+@tailwind components;
+@tailwind utilities;
+
+ 
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+.animate{
+    transition: transform 0.3s ease;
+}
+
+
+
+ 
+
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .floating-image {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+
+  
+
+
+  
+
+
